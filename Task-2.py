@@ -6,7 +6,7 @@ class Event:
             self.date = date
             self.participant_num = participant
 
-        def add_participant(self, people): #Confused on what needs to be done
+        def add_participant(self, people): 
             self.participant_num += people
         
         def get_participant_count(self):
