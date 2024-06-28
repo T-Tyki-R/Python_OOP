@@ -6,12 +6,15 @@ class Vehicle:
             self.type = type
             self.owner = owner
 
-        def update_owner(self):
+        def get_info(self):
               return f" The registration number of {self.owner}'s {self.type} is {self.registration_number}."
+        def update_owner(self, person):
+              self.owner = person
+              return f" The new owner is {self.owner}."
 
 car_1 = Vehicle("123456", "Totoya", "Billy")
 car_2 = Vehicle("220019", "Nissan", "Kelly")
 
-print(car_1.update_owner())
-print(car_2.update_owner())
+print(car_1.get_info())
+print(car_2.update_owner("Jane"))
 
